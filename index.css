@@ -128,3 +128,6 @@ blockquote.code {
 	padding-left: 1em;
 	padding-right: 1em;
 }
+.mermaid {
+	width:100vw;
+}
