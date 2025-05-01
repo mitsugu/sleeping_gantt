@@ -31,6 +31,9 @@ table tr td {
 	padding:3px;
 	text-align:center;
 }
+table tr:nth-child(2) > td:last-child {
+	vertical-align:top;
+}
 h3 {
   padding:0.5em 0em 0em 0.5em;
   border-width:2px 0px 0px 0px;
