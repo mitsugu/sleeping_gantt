@@ -27,15 +27,13 @@
 
 	<link rel="stylesheet" type="text/css" href="index.css">
 
-	<!--
 	<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
-	<script src="node_modules/mermaid/dist/mermaid.js"></script>
+	<!--<script src="node_modules/mermaid/dist/mermaid.js"></script>-->
 	<script defer>
 		mermaid.initialize({
 		startOnLoad: true
 	});
 	</script>
-	-->
 </head>
 
 <body>
@@ -55,11 +53,11 @@
 				---
 				displayMode: compact
 				---
+				%%{init:{'theme':'neutral'}}%%
 				gantt
 					dateFormat HH:mm
 					axisFormat %H:%M
 					tickInterval 1hour
-					%%{init:{'theme':'neutral'}}%%
 
 					section 06/01 (日)
 					睡眠   : 00:30, 07:00
@@ -170,7 +168,7 @@
 
 					section 06/23 (月)
 					眠前薬 : milestone, 01:05, 2m
-					睡眠   : 00130, 04:30
+					睡眠   : 00:30, 04:30
 					眠前薬 : milestone, 23:50, 2m
 					%%睡眠   : 21:30, 150m
 
@@ -181,11 +179,11 @@
 
 					section 06/25 (水)
 					睡眠   : 00:00, 05:30
-					%%眠前薬 : milestone, 20:33, 2m
-					%%睡眠   : 21:30, 150m
+					眠前薬 : milestone, 23:41, 2m
+					%%睡眠   : 23:45, 15m
 
 					section 06/26 (木)
-					睡眠   : 00:00, 00:00
+					睡眠   : 00:00, 05:30
 					%%眠前薬 : milestone, 20:33, 2m
 					%%睡眠   : 21:30, 150m
 
@@ -350,7 +348,7 @@
 					title "2025 年 6 月睡眠時間推移"
 					x-axis "日付" [01, 02, 03, 04, 05, 06, 07, 08, 09, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30]
 					y-axis "睡眠時間 (h)" 0 --> 10
-					bar [6.5, 5.0, 5.0, 5.5, 5.0, 5.5, 6.5, 6.0, 5.5, 5.5, 5.5, 6.5, 5.0, 6.0, 6.0, 7.0, 5.0, 3.5, 5.0, 4.0, 4.0, 4.5, 6.0, 5.5, 0, 0, 0, 0, 0, 0]
+					bar [6.5, 5.0, 5.0, 5.5, 5.0, 5.5, 6.5, 6.0, 5.5, 5.5, 5.5, 6.5, 5.0, 6.0, 6.0, 7.0, 5.0, 3.5, 5.0, 4.0, 4.0, 4.5, 6.0, 5.5, 5.5, 0, 0, 0, 0, 0]
 			</div>
 		</div>
 	</div>
